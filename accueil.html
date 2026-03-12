@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADOS, ACCROS, RÉSEAUX ?</title>
+  <link rel="stylesheet" href="accueil.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo">AAR</div>
+    <ul class="nav-links">
+      <li><a href="#autonomie" class="nav-link">Apprendre en autonomie</a></li>
+      <li><a href="#activites" class="nav-link nav-link--pill">Les activités</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+
+    <!-- Floating social icons scattered -->
+    <div class="hero__icons" aria-hidden="true">
+
+      <div class="float-icon float-icon--1">
+        <svg viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="7" fill="#E1306C"/><path d="M12 7.8a4.2 4.2 0 1 0 0 8.4 4.2 4.2 0 0 0 0-8.4Zm0 6.9a2.7 2.7 0 1 1 0-5.4 2.7 2.7 0 0 1 0 5.4Z" fill="white"/><circle cx="16.6" cy="7.4" r="1" fill="white"/><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" stroke="white" stroke-width="1.4" fill="none"/></svg>
+      </div>
+
+      <div class="float-icon float-icon--2">
+        <svg viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="7" fill="#010101"/><path d="M16.5 3h-2.8v10.5a2.2 2.2 0 1 1-2.1-2.3c.2 0 .4 0 .6.05V8.4a5 5 0 1 0 4.3 4.9V8.2c.8.5 1.7.8 2.8.9V6.4A3 3 0 0 1 16.5 3Z" fill="white"/></svg>
+      </div>
+
+      <div class="float-icon float-icon--3">
+        <svg viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="7" fill="#FF0000"/><path d="M20 8s-.2-1.4-.9-2c-.8-.9-1.7-.9-2.1-1C14.9 5 12 5 12 5s-2.9 0-5 .2c-.4 0-1.3.1-2.1 1-.7.6-.9 2-.9 2S4 9.6 4 11v1.4c0 1.4.2 2.8.2 2.8s.2 1.4.9 2c.8.9 1.9.8 2.4.9C9.2 18 12 18 12 18s2.9 0 5-.2c.4 0 1.3-.1 2.1-1 .7-.6.9-2 .9-2S20 13.4 20 12v-1.4C20 9.2 20 8 20 8ZM10 14V10l5 2-5 2Z" fill="white"/></svg>
+      </div>
+
+      <div class="float-icon float-icon--4">
+        <svg viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="7" fill="#1877F2"/><path d="M13.2 22V15.2h2.6l.4-3.2h-3V10.3c0-.9.4-1.7 1.8-1.7H16.4V6a16 16 0 0 0-2.4-.2C11.5 5.8 10 7.3 10 10v2H7.4v3.2H10V22a10.2 10.2 0 0 0 3.2 0Z" fill="white"/></svg>
+      </div>
+
+      <div class="float-icon float-icon--5">
+        <svg viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="7" fill="#111"/><path d="M13.8 11.2 18.4 6h-1.1l-4 4.6L10 6H6l5.2 7.4L6 18.5h1.1l4.5-5.2 3.6 5.2H19l-5.2-7.3Zm-1.6 1.9-.5-.7-4.2-5.9H10l3.3 4.7.5.7 4.4 6.1h-2.1l-3.9-5.9Z" fill="white"/></svg>
+      </div>
+
+      <div class="float-icon float-icon--6">
+        <svg viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="7" fill="#0A66C2"/><path d="M7 10H5V19H7V10ZM6 8.8A1.4 1.4 0 1 0 6 6a1.4 1.4 0 0 0 0 2.8ZM19.4 13.8C19.4 11.3 18.2 10 16 10c-1.3 0-2.3.7-2.8 1.5V10.2H11.2V19H13.4v-5c0-1.4.7-2.2 2-2.2 1.1 0 1.8.8 1.8 2.2v5h2.2v-5.2Z" fill="white"/></svg>
+      </div>
+
+      <div class="float-icon float-icon--7">
+        <svg viewBox="0 0 24 24" fill="#E1306C"><path d="M12 21.4C11.4 21 2 15 2 9a5 5 0 0 1 9.3-2.5L12 7.8l.7-1.3A5 5 0 0 1 22 9c0 6-9.4 12-10 12.4Z"/></svg>
+      </div>
+
+      <div class="float-icon float-icon--8">
+        <svg viewBox="0 0 24 24" fill="#1877F2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.3a2 2 0 0 0 2-1.7l1.4-9a2 2 0 0 0-2-2.3H14ZM7 20H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3v11Z"/></svg>
+      </div>
+
+      <div class="float-icon float-icon--9">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="18" cy="5" r="3" fill="#818cf8"/><circle cx="6" cy="12" r="3" fill="#818cf8"/><circle cx="18" cy="19" r="3" fill="#818cf8"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5" stroke="#818cf8" stroke-width="2"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5" stroke="#818cf8" stroke-width="2"/></svg>
+      </div>
+
+      <div class="float-icon float-icon--10">
+        <svg viewBox="0 0 24 24" fill="#4fc3f7"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      </div>
+
+      <div class="float-icon float-icon--11">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M17 1l4 4-4 4" stroke="#a78bfa" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 11V9a4 4 0 0 1 4-4h14" stroke="#a78bfa" stroke-width="2.2" stroke-linecap="round"/><path d="M7 23l-4-4 4-4" stroke="#a78bfa" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 13v2a4 4 0 0 1-4 4H3" stroke="#a78bfa" stroke-width="2.2" stroke-linecap="round"/></svg>
+      </div>
+
+      <div class="float-icon float-icon--12">
+        <svg viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="7" fill="#FFFC00"/><path d="M12 4c-2.7 0-4.5 2-4.5 4.5v3.3c-.3.1-.8.5-.8 1.2s.5 1 .8 1.1c.2.6.5 1 .8 1.3a5 5 0 0 1-2 .6c-.3.1-.5.3-.5.6 0 .5.5.8 1 .9.5.1 1.2.3 1.5.7.2.3.3.7.3 1.1 0 .3.1.5.4.5h6c.3 0 .4-.2.4-.5 0-.4.1-.8.3-1.1.3-.4 1-.6 1.5-.7.5-.1 1-.4 1-.9 0-.3-.2-.5-.5-.6a5 5 0 0 1-2-.6c.3-.3.6-.7.8-1.3.3-.1.8-.4.8-1.1s-.5-1.1-.8-1.2V8.5C16.5 6 14.7 4 12 4Z" fill="#010101"/></svg>
+      </div>
+
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__eyebrow">Blog FLE · UPE2A · Niveau B1</div>
+      <h1 class="hero__title">ADOS,<br>ACCROS,<br>RÉSEAUX&nbsp;?</h1>
+      <p class="hero__subtitle">Un blog de FLE pour adolescents en UPE2A niveau B1</p>
+      <p class="hero__desc">Comprendre, analyser et utiliser le français sur les réseaux sociaux.</p>
+      <div class="scroll-cue">↓ Lis avant de commencer ↓</div>
+    </div>
+  </header>
+
+  <!-- PRESENTATION -->
+  <section class="section section--white">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-grid__text">
+          <p class="section__eyebrow">À propos</p>
+          <p>Ce blog pédagogique s'adresse à des adolescents allophones scolarisés en UPE2A et de niveau B1.</p>
+          <p>Il propose des activités basées sur des documents authentiques (vidéos, messages, articles, infographies) pour comprendre le français utilisé sur les réseaux sociaux et réfléchir à leurs impacts.</p>
+          <p>Les activités peuvent être réalisées en autonomie.</p>
+        </div>
+        <div class="intro-grid__visual">
+          <div class="glow-card">
+            <div class="glow-card__blob"></div>
+            <p class="glow-card__label">Pour qui ?</p>
+            <ul class="glow-card__list">
+              <li>Ados allophones en UPE2A</li>
+              <li>Niveau B1 en français</li>
+              <li>Curieux·se des réseaux sociaux</li>
+              <li>À ton rythme, en autonomie</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OBJECTIFS -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">Pourquoi ce blog ?</p>
+        <h2 class="section__title">Quels sont les objectifs ?</h2>
+      </div>
+
+      <div class="prose-centered">
+        <p>Ce blog pédagogique s'adresse à des adolescents allophones scolarisés en UPE2A et de niveau B1.</p>
+        <p>Il propose des activités basées sur des documents authentiques (vidéos, messages, articles, infographies) pour comprendre le français utilisé sur les réseaux sociaux et réfléchir à leurs impacts.</p>
+        <p>Les activités peuvent être réalisées en autonomie.</p>
+      </div>
+
+      <p class="goals-intro">Grâce aux activités proposées, tu vas pouvoir :</p>
+
+      <div class="goals-grid">
+        <div class="goal-card">
+          <span class="goal-card__icon">🎧</span>
+          <h3>Comprendre</h3>
+          <p>Améliorer ta compréhension orale et écrite</p>
+        </div>
+        <div class="goal-card">
+          <span class="goal-card__icon">📚</span>
+          <h3>Enrichir</h3>
+          <p>Enrichir ton vocabulaire</p>
+        </div>
+        <div class="goal-card">
+          <span class="goal-card__icon">✍️</span>
+          <h3>T'exprimer</h3>
+          <p>T'exprimer à l'oral et à l'écrit</p>
+        </div>
+        <div class="goal-card">
+          <span class="goal-card__icon">🌐</span>
+          <h3>Analyser</h3>
+          <p>Comprendre les enjeux des réseaux sociaux</p>
+        </div>
+        <div class="goal-card">
+          <span class="goal-card__icon">🚀</span>
+          <h3>Progresser</h3>
+          <p>Apprendre à travailler en autonomie</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO -->
+  <section class="section section--white" id="autonomie">
+    <div class="container container--narrow">
+      <div class="section__header">
+        <p class="section__eyebrow">Mode d'emploi</p>
+        <h2 class="section__title">Comment utiliser le blog ?</h2>
+      </div>
+      <p class="howto-lead">Tu peux utiliser ce blog seul et à ton rythme</p>
+      <p class="howto-sub">Pour chaque activité :</p>
+      <ol class="steps">
+        <li class="step"><span class="step__num">1</span><span class="step__text">Observe le document</span></li>
+        <li class="step"><span class="step__num">2</span><span class="step__text">Lis ou écoute attentivement</span></li>
+        <li class="step"><span class="step__num">3</span><span class="step__text">Fais les activités</span></li>
+        <li class="step"><span class="step__num">4</span><span class="step__text">Vérifie ta compréhension</span></li>
+        <li class="step"><span class="step__num">5</span><span class="step__text">Auto-évalue ton travail</span></li>
+      </ol>
+      <p class="howto-note">Tu peux revenir sur une activité autant de fois que tu veux</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--dark" id="activites">
+    <div class="cta-blob cta-blob--1"></div>
+    <div class="cta-blob cta-blob--2"></div>
+    <div class="container">
+      <div class="cta-inner">
+        <p class="cta-eyebrow">Tu es prêt·e ?</p>
+        <h2 class="cta-title">Commence dès maintenant.</h2>
+        <div class="cta-buttons">
+          <a href="#" class="btn btn--white">Commencer les activités</a>
+          <a href="#autonomie" class="btn btn--outline">Apprendre en autonomie</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Blog FLE · UPE2A · Niveau B1 — <em>ADOS, ACCROS, RÉSEAUX ?</em></p>
+  </footer>
+
+</body>
+</html>
