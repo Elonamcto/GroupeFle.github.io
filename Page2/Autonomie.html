@@ -3,45 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apprendre en autonomie – AAR</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="quiz.css">
+  <title>Apprendre en autonomie – Ados, Réseaux, Accros</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="autonomie.css">
 </head>
 <body>
 
-  <header class="header">
-    <div class="logo">AAR</div>
-    <nav class="nav-menu">
-      <a href="index.html">Accueil</a>
-      <a href="#definition">C'est quoi ?</a>
-      <a href="#auto-evaluer">S'auto-évaluer</a>
-      <a href="activite1.html" class="nav-pill">Les activités</a>
+  <header class="site-header">
+    <a href="../index.html" class="nav-logo">Ados,&nbsp;Réseaux,&nbsp;Accros</a>
+    <nav>
+      <a href="Autonomie.html" class="nav-link active">Apprendre en autonomie</a>
+      <div class="nav-dropdown">
+        <span class="nav-dropdown-toggle">Les activités</span>
+        <div class="nav-dropdown-menu">
+          <a href="../Chapitre1/Chapitre1.html"><span class="chap-num">Ch. 1</span>Les réseaux sociaux au quotidien</a>
+          <a href="../Chapitre2/Chapitre2.html"><span class="chap-num">Ch. 2</span>Les bienfaits des réseaux sociaux</a>
+          <a href="../Chapitre3/Chapitre3.html"><span class="chap-num">Ch. 3</span>Les méfaits des réseaux sociaux</a>
+          <a href="../Chapitre4/Chapitre4.html"><span class="chap-num">Ch. 4</span>Utiliser les réseaux sociaux intelligemment</a>
+        </div>
+      </div>
+      <a href="../Evaluation/Evaluation.html" class="nav-pill">Auto-évaluation</a>
     </nav>
   </header>
 
-  <main class="main-container">
-
-    <!-- PAGE HEADER -->
-    <div class="page-header">
-      <span class="page-eyebrow">Blog FLE · UPE2A · Niveau B1</span>
-      <h1 class="activity-title">Apprendre<br><span>en autonomie</span></h1>
-      <p class="page-header__desc">Tu choisis ton rythme, tu réfléchis à ta compréhension et tu cherches des solutions quand tu ne comprends pas.</p>
+  <div class="hero">
+    <div class="hero__text">
+      <p class="eyebrow">Blog FLE · UPE2A · Niveau B1</p>
+      <h1>Apprendre<br><em>en autonomie</em></h1>
+      <p class="hero__sub">Tu choisis ton rythme, tu réfléchis à ta compréhension et tu cherches des solutions quand tu ne comprends pas.</p>
     </div>
+    <div class="hero__img-col">
+      <img src="autonomie-hero.png" alt="Élève qui travaille en autonomie" class="hero__img">
+    </div>
+  </div>
 
-    <!-- DEFINITION -->
-    <section class="card autonomie-card" id="definition">
-      <div class="card__icon">🧠</div>
-      <div class="section-label">C'est quoi ?</div>
+  <main>
+
+    <div class="card reveal" id="definition">
+      <div class="section-tag">🧠 C'est quoi ?</div>
       <h2>Qu'est-ce que l'apprentissage en autonomie ?</h2>
       <p>Apprendre en autonomie c'est apprendre seul, mais avec de l'aide. Tu choisis ton rythme, tu réfléchis à ta compréhension et tu cherches des solutions quand tu ne comprends pas.</p>
       <p>Sur ce blog, tu es acteur de ton apprentissage.</p>
-    </section>
+    </div>
 
-    <!-- BIEN TRAVAILLER SEUL -->
-    <section class="card autonomie-card" id="travailler-seul">
-      <div class="card__icon">✅</div>
-      <div class="section-label">Méthode</div>
+    <div class="card reveal" id="travailler-seul">
+      <div class="section-tag">✅ Méthode</div>
       <h2>Comment bien travailler seul ?</h2>
       <p>Voici quelques conseils pour travailler efficacement :</p>
       <div class="tip-list">
@@ -52,12 +58,10 @@
         <div class="tip-item"><span class="tip-dot"></span>Prends ton temps</div>
       </div>
       <p class="highlight-note">💡 Tu n'as pas besoin de tout comprendre tout de suite</p>
-    </section>
+    </div>
 
-    <!-- COMPRENDRE UNE VIDEO -->
-    <section class="card autonomie-card" id="video">
-      <div class="card__icon">🎥</div>
-      <div class="section-label">Vidéo</div>
+    <div class="card reveal" id="video">
+      <div class="section-tag">🎥 Vidéo</div>
       <h2>Comprendre une vidéo</h2>
       <p>Quand tu regardes une vidéo :</p>
       <ol class="steps">
@@ -66,12 +70,10 @@
         <li class="step"><span class="step__num">3</span><span class="step__text">Écoute les mots que tu connais</span></li>
         <li class="step"><span class="step__num">4</span><span class="step__text">Observe les images</span></li>
       </ol>
-    </section>
+    </div>
 
-    <!-- VOCABULAIRE -->
-    <section class="card autonomie-card" id="vocabulaire">
-      <div class="card__icon">📖</div>
-      <div class="section-label">Vocabulaire</div>
+    <div class="card reveal" id="vocabulaire">
+      <div class="section-tag">📖 Vocabulaire</div>
       <h2>Apprendre du vocabulaire</h2>
       <p>Pour mémoriser du vocabulaire :</p>
       <ol class="steps">
@@ -80,24 +82,22 @@
         <li class="step"><span class="step__num">3</span><span class="step__text">Relis-les plusieurs fois</span></li>
         <li class="step"><span class="step__num">4</span><span class="step__text">Utilise-les dans les activités</span></li>
       </ol>
-    </section>
+    </div>
 
-    <!-- AUTO-EVALUER -->
-    <section class="card autonomie-card" id="auto-evaluer">
-      <div class="card__icon">🎯</div>
-      <div class="section-label">Auto-évaluation</div>
+    <div class="card reveal" id="auto-evaluer">
+      <div class="section-tag">🎯 Auto-évaluation</div>
       <h2>S'auto-évaluer</h2>
       <p>À la fin de chaque activité, demande-toi :</p>
       <div class="eval-grid">
-        <div class="eval-card eval-card--question">
+        <div class="eval-card">
           <span class="eval-card__icon">🤔</span>
           <p>Est-ce que j'ai compris le document ?</p>
         </div>
-        <div class="eval-card eval-card--question">
+        <div class="eval-card">
           <span class="eval-card__icon">💬</span>
           <p>Est-ce que je peux expliquer le sujet ?</p>
         </div>
-        <div class="eval-card eval-card--question">
+        <div class="eval-card">
           <span class="eval-card__icon">📝</span>
           <p>Est-ce que j'ai appris de nouveaux mots ?</p>
         </div>
@@ -107,22 +107,38 @@
         <span class="eval-badge eval-badge--green">✓ Je comprends bien</span>
         <span class="eval-badge eval-badge--orange">↩ J'ai encore besoin d'aide</span>
       </div>
-    </section>
+    </div>
 
-    <!-- CONSEIL -->
-    <section class="card card--accent autonomie-card" id="conseil">
-      <div class="card__icon">⭐</div>
-      <div class="section-label section-label--light">Conseil important</div>
+    <div class="card card--accent reveal" id="conseil">
+      <div class="section-tag section-tag--light">⭐ Conseil important</div>
       <h2>N'aie pas peur des erreurs !</h2>
       <p>Les erreurs font partie de l'apprentissage. Ce blog est un espace pour essayer, comprendre et progresser.</p>
-      <a href="activite1.html" class="btn-start">Commencer les activités →</a>
-    </section>
+      <a href="../Chapitre1/Chapitre1.html" class="btn-start">Commencer les activités →</a>
+    </div>
 
   </main>
 
-  <footer class="footer">
+  <footer>
     <p>Blog FLE · UPE2A · Niveau B1 — <em>ADOS, ACCROS, RÉSEAUX ?</em></p>
   </footer>
+
+  <script>
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(t) {
+      t.addEventListener('click', function(e) {
+        e.stopPropagation();
+        t.closest('.nav-dropdown').classList.toggle('open');
+      });
+    });
+    document.addEventListener('click', function() {
+      document.querySelectorAll('.nav-dropdown.open').forEach(function(d) { d.classList.remove('open'); });
+    });
+    const obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.07 });
+    document.querySelectorAll('.reveal').forEach(function(el, i) {
+      el.style.transitionDelay = (i * 0.05) + 's'; obs.observe(el);
+    });
+  </script>
 
 </body>
 </html>

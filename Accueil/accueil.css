@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
 }
-
 :root {
   --white: #ffffff;
   --gray-50: #f5f5f7;
@@ -23,9 +22,7 @@
   --radius: 18px;
   --radius-sm: 12px;
 }
-
 html { scroll-behavior: smooth; }
-
 body {
   font-family: var(--font);
   background: var(--white);
@@ -34,15 +31,12 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
-
 a { text-decoration: none; color: inherit; }
-
 .container {
   max-width: 980px;
   margin: 0 auto;
   padding: 0 2rem;
 }
-
 .container--narrow {
   max-width: 660px;
   margin: 0 auto;
@@ -52,7 +46,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================
    NAVBAR
    ============================ */
-.navbar {
+.site-header {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 200;
@@ -61,49 +55,195 @@ a { text-decoration: none; color: inherit; }
   justify-content: space-between;
   padding: 0 2.5rem;
   height: 52px;
-  background: rgba(255,255,255,0.72);
+  background: rgba(255,255,255,0.82);
   backdrop-filter: saturate(180%) blur(24px);
+  -webkit-backdrop-filter: saturate(180%) blur(24px);
   border-bottom: 1px solid rgba(0,0,0,0.08);
   transition: background 0.3s;
+  gap: 1rem;
 }
 
-.nav-logo {
+/* Logo */
+.site-header .nav-logo {
   font-size: 1rem;
   font-weight: 800;
-  letter-spacing: 0.12em;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  word-spacing: 0.18em;
+  white-space: nowrap;
+  text-decoration: none;
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  transition: opacity 0.2s;
 }
+.site-header .nav-logo:hover { opacity: 0.75; }
 
-.nav-links {
-  list-style: none;
+/* Nav droite */
+.site-header nav {
   display: flex;
-  gap: 1.5rem;
   align-items: center;
+  gap: 0.3rem;
+  flex-wrap: wrap;
 }
 
-.nav-link {
+/* Liens simples */
+.site-header nav a.nav-link {
+  font-family: var(--font);
   font-size: 0.82rem;
   font-weight: 400;
   color: var(--gray-600);
-  transition: color 0.2s;
+  text-decoration: none;
+  padding: 0.38rem 0.9rem;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+  white-space: nowrap;
+}
+.site-header nav a.nav-link:hover {
+  color: var(--gray-900);
+  border-color: var(--gray-100);
+  background: var(--gray-50);
 }
 
-.nav-link:hover { color: var(--gray-900); }
-
-.nav-link--pill {
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  color: var(--white) !important;
+/* Pill Auto-évaluation */
+.site-header nav a.nav-pill {
+  font-family: var(--font);
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--white);
+  text-decoration: none;
   padding: 0.38rem 1.1rem;
   border-radius: 50px;
-  font-weight: 500;
-  font-size: 0.82rem;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  border: none;
   transition: opacity 0.2s, transform 0.2s;
+  white-space: nowrap;
+}
+.site-header nav a.nav-pill:hover {
+  opacity: 0.88;
+  transform: scale(1.03);
 }
 
-.nav-link--pill:hover { opacity: 0.88; transform: scale(1.03); }
+/* Dropdown wrapper */
+.site-header .nav-dropdown {
+  position: relative;
+}
+
+/* Dropdown toggle */
+.site-header .nav-dropdown-toggle {
+  font-family: var(--font);
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: var(--gray-600);
+  text-decoration: none;
+  padding: 0.38rem 0.9rem;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+  white-space: nowrap;
+  background: transparent;
+  user-select: none;
+}
+.site-header .nav-dropdown-toggle::after {
+  content: "▾";
+  font-size: 0.7rem;
+  opacity: 0.5;
+  transition: transform 0.2s;
+}
+.site-header .nav-dropdown:hover .nav-dropdown-toggle,
+.site-header .nav-dropdown.open .nav-dropdown-toggle {
+  color: var(--gray-900);
+  border-color: var(--gray-100);
+  background: var(--gray-50);
+}
+.site-header .nav-dropdown:hover .nav-dropdown-toggle::after,
+.site-header .nav-dropdown.open .nav-dropdown-toggle::after {
+  transform: rotate(-180deg);
+}
+
+/* Dropdown menu */
+.site-header .nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  pointer-events: auto;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  min-width: 300px;
+  background: var(--white);
+  border: 1px solid var(--gray-100);
+  border-radius: 14px;
+  padding: 0.5rem;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.site-header .nav-dropdown:hover .nav-dropdown-menu,
+.site-header .nav-dropdown.open .nav-dropdown-menu {
+  display: flex;
+}
+
+/* Dropdown items */
+.site-header .nav-dropdown-menu a {
+  font-family: var(--font);
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: var(--gray-600);
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  transition: background 0.15s, color 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.site-header .nav-dropdown-menu a:hover {
+  background: var(--gray-50);
+  color: var(--gray-900);
+}
+
+/* Badge numéro chapitre */
+.site-header .nav-dropdown-menu a .chap-num {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  background: rgba(79,70,229,0.08);
+  border: 1px solid rgba(79,70,229,0.18);
+  padding: 0.15rem 0.5rem;
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+/* Lien actif */
+.site-header nav a.active {
+  color: var(--gray-900);
+  background: var(--gray-50);
+}
+
+/* Responsive navbar */
+@media (max-width: 640px) {
+  .site-header {
+    padding: 0 1rem;
+    height: auto;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    flex-wrap: wrap;
+  }
+  .site-header nav { gap: 0.2rem; }
+  .site-header .nav-dropdown-menu {
+    right: auto;
+    left: 0;
+    min-width: 260px;
+  }
+}
 
 /* ============================
    HERO
@@ -270,6 +410,10 @@ a { text-decoration: none; color: inherit; }
 .section__header {
   text-align: center;
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .section__eyebrow {

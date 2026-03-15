@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto-évaluation – Ados, Réseaux, Accros</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="evaluation.css">
+</head>
+<body>
+
+  <!-- ══════════ NAVBAR ══════════ -->
+  <header class="site-header">
+    <a href="../Accueil/index.html" class="nav-logo">Ados,&nbsp;Réseaux,&nbsp;Accros</a>
+    <nav>
+      <a href="../Page2/Autonomie.html" class="nav-link">Apprendre en autonomie</a>
+      <div class="nav-dropdown">
+        <span class="nav-dropdown-toggle">Les activités</span>
+        <div class="nav-dropdown-menu">
+          <a href="../Chapitre1/Chapitre1.html"><span class="chap-num">Ch. 1</span>Les réseaux sociaux au quotidien</a>
+          <a href="../Chapitre2/Chapitre2.html"><span class="chap-num">Ch. 2</span>Les bienfaits des réseaux sociaux</a>
+          <a href="../Chapitre3/Chapitre3.html"><span class="chap-num">Ch. 3</span>Les méfaits des réseaux sociaux</a>
+          <a href="../Chapitre4/Chapitre4.html"><span class="chap-num">Ch. 4</span>Utiliser les réseaux sociaux intelligemment</a>
+        </div>
+      </div>
+      <a href="Evaluation.html" class="nav-pill active">Auto-évaluation</a>
+    </nav>
+  </header>
+
+  <!-- ══════════ HERO ══════════ -->
+  <div class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">Blog FLE · UPE2A · Niveau B1</p>
+      <h1>Auto-<em>évaluation</em></h1>
+      <p class="hero__sub">Évalue ton travail honnêtement. C'est en comprenant tes points forts et tes axes d'amélioration que tu progresses !</p>
+    </div>
+    <div class="hero__tabs">
+      <button class="tab-btn active" data-tab="ecrit">✍️ Expression écrite</button>
+      <button class="tab-btn" data-tab="oral">🎤 Expression orale</button>
+    </div>
+  </div>
+
+  <!-- ══════════ MAIN ══════════ -->
+  <main>
+
+    <!-- ─── EXPRESSION ÉCRITE ─── -->
+    <div class="tab-content active" id="tab-ecrit">
+
+      <div class="score-banner reveal">
+        <div class="score-banner__label">Ta progression globale</div>
+        <div class="score-bar-wrap">
+          <div class="score-bar" id="score-bar-ecrit"></div>
+        </div>
+        <div class="score-text" id="score-text-ecrit">0 / 11 critères validés</div>
+      </div>
+
+      <!-- I. Contenu -->
+      <div class="card reveal">
+        <div class="section-tag">📝 I · Contenu</div>
+        <h2>Contenu de ton texte</h2>
+        <p class="card-intro">Après avoir terminé ton texte, relis-le et coche la case correspondante.</p>
+
+        <div class="criteria-list" data-group="ecrit">
+          <div class="criterion">
+            <p class="criterion__text">J'ai répondu à la consigne.</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+          <div class="criterion">
+            <p class="criterion__text">Mon opinion est claire.</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+          <div class="criterion">
+            <p class="criterion__text">J'ai donné au moins deux idées.</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+          <div class="criterion">
+            <p class="criterion__text">J'ai donné un exemple ou une explication.</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- II. Organisation -->
+      <div class="card reveal">
+        <div class="section-tag">🗂️ II · Organisation du texte</div>
+        <h2>Organisation de ton texte</h2>
+
+        <div class="criteria-list" data-group="ecrit">
+          <div class="criterion">
+            <p class="criterion__text">Mon texte est organisé (début, idées, fin).</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+          <div class="criterion">
+            <p class="criterion__text">J'ai utilisé des connecteurs logiques (d'abord, ensuite, parce que…).</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+          <div class="criterion">
+            <p class="criterion__text">Mes phrases sont logiques et compréhensibles.</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- III. Langue -->
+      <div class="card reveal">
+        <div class="section-tag">🔤 III · Langue</div>
+        <h2>Utilisation de la langue</h2>
+
+        <div class="criteria-list" data-group="ecrit">
+          <div class="criterion">
+            <p class="criterion__text">J'utilise le vocabulaire du thème.</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+          <div class="criterion">
+            <p class="criterion__text">Mes phrases sont correctes.</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+          <div class="criterion">
+            <p class="criterion__text">J'utilise correctement les temps (présent, passé…).</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+          <div class="criterion">
+            <p class="criterion__text">J'ai vérifié l'orthographe.</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bilan écrit -->
+      <div class="card card--bilan reveal">
+        <div class="section-tag section-tag--orange">📋 Mon bilan</div>
+        <h2>Remplis ton bilan</h2>
+        <p>Rédige quelques phrases pour faire le point sur ton travail.</p>
+
+        <div class="bilan-field">
+          <label>⭐ Ce que j'ai bien réussi :</label>
+          <textarea placeholder="Écris ici ce qui s'est bien passé..."></textarea>
+        </div>
+        <div class="bilan-field">
+          <label>🔧 Ce que je peux améliorer :</label>
+          <textarea placeholder="Écris ici ce que tu veux améliorer..."></textarea>
+        </div>
+        <div class="bilan-field">
+          <label>🎯 Mon objectif pour la prochaine activité :</label>
+          <textarea placeholder="Quel est ton prochain objectif ?"></textarea>
+        </div>
+      </div>
+
+      <!-- Résultat écrit -->
+      <div class="result-card reveal" id="result-ecrit" style="display:none;">
+        <div class="result-card__emoji" id="result-emoji-ecrit">🎉</div>
+        <h3 id="result-title-ecrit">Excellent travail !</h3>
+        <p id="result-msg-ecrit"></p>
+      </div>
+
+    </div>
+
+    <!-- ─── EXPRESSION ORALE ─── -->
+    <div class="tab-content" id="tab-oral">
+
+      <div class="score-banner reveal">
+        <div class="score-banner__label">Ta progression globale</div>
+        <div class="score-bar-wrap">
+          <div class="score-bar" id="score-bar-oral"></div>
+        </div>
+        <div class="score-text" id="score-text-oral">0 / 13 critères validés</div>
+      </div>
+
+      <!-- I. Contenu oral -->
+      <div class="card reveal">
+        <div class="section-tag">🎙️ I · Contenu</div>
+        <h2>Contenu de ton exposé</h2>
+        <p class="card-intro">Après ton enregistrement, écoute-toi et coche la case correspondante.</p>
+
+        <div class="criteria-list" data-group="oral">
+          <div class="criterion">
+            <p class="criterion__text">J'ai répondu à la question.</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+          <div class="criterion">
+            <p class="criterion__text">Mon opinion est claire.</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+          <div class="criterion">
+            <p class="criterion__text">J'ai expliqué mes idées.</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+          <div class="criterion">
+            <p class="criterion__text">J'ai donné au moins un exemple.</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- II. Organisation orale -->
+      <div class="card reveal">
+        <div class="section-tag">🗂️ II · Organisation</div>
+        <h2>Organisation de ton discours</h2>
+
+        <div class="criteria-list" data-group="oral">
+          <div class="criterion">
+            <p class="criterion__text">Mon discours est organisé.</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+          <div class="criterion">
+            <p class="criterion__text">J'utilise des connecteurs logiques (d'abord, ensuite, par exemple…).</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+          <div class="criterion">
+            <p class="criterion__text">Mes idées sont faciles à comprendre.</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- III. Langue orale -->
+      <div class="card reveal">
+        <div class="section-tag">🔤 III · Langue</div>
+        <h2>Utilisation de la langue</h2>
+
+        <div class="criteria-list" data-group="oral">
+          <div class="criterion">
+            <p class="criterion__text">J'utilise le vocabulaire du thème.</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+          <div class="criterion">
+            <p class="criterion__text">Mes phrases sont compréhensibles.</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+          <div class="criterion">
+            <p class="criterion__text">J'utilise correctement les temps.</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- IV. Prononciation -->
+      <div class="card reveal">
+        <div class="section-tag">🔊 IV · Prononciation et fluidité</div>
+        <h2>Prononciation et fluidité</h2>
+
+        <div class="criteria-list" data-group="oral">
+          <div class="criterion">
+            <p class="criterion__text">Ma prononciation est compréhensible.</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+          <div class="criterion">
+            <p class="criterion__text">Je parle assez naturellement.</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+          <div class="criterion">
+            <p class="criterion__text">Je ne lis pas entièrement un texte.</p>
+            <div class="criterion__btns">
+              <button class="crit-btn" data-val="2">✅ Oui</button>
+              <button class="crit-btn" data-val="1">🟡 Presque</button>
+              <button class="crit-btn" data-val="0">❌ Pas encore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Résultat oral -->
+      <div class="result-card reveal" id="result-oral" style="display:none;">
+        <div class="result-card__emoji" id="result-emoji-oral">🎉</div>
+        <h3 id="result-title-oral">Excellent travail !</h3>
+        <p id="result-msg-oral"></p>
+      </div>
+
+    </div>
+
+    <!-- Bouton reset -->
+    <div class="reset-wrap reveal">
+      <button class="btn-reset" id="btn-reset">🔄 Recommencer l'évaluation</button>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Blog FLE · UPE2A · Niveau B1 — <em>ADOS, ACCROS, RÉSEAUX ?</em></p>
+  </footer>
+
+  <script src="evaluation.js"></script>
+</body>
+</html>
