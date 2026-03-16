@@ -325,6 +325,7 @@ main { max-width: 820px; margin: 0 auto; padding: 0 2rem 6rem; }
 /* ── BLOC CARTE ─────────────────────────────────────── */
 .map-block {
   margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -738,4 +739,62 @@ footer em { color: var(--accent2); font-style: italic; }
 @media (max-width: 600px) {
   .next-chapter-wrap { padding: 0 1rem 2.5rem; }
   .btn-next-chapter { font-size: 0.92rem; padding: 0.9rem 1.8rem; width: 100%; justify-content: center; }
+}
+/* ── AUDIO PLAYER ───────────────────────────────────── */
+.audio-player {
+  margin-top: 1.2rem;
+  padding: 1rem 1.2rem;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.audio-player-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent3);
+}
+
+.audio-player audio {
+  width: 100%;
+  border-radius: 8px;
+  accent-color: var(--accent);
+  filter: brightness(0.95);
+}
+
+.audio-player audio:hover {
+  filter: brightness(1);
+}
+
+/* ── VIDEO PLAYER ───────────────────────────────────── */
+.video-player video {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 1.5rem auto;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.video-player:hover {
+  border-color: rgba(108,99,255,0.35);
+  box-shadow: 0 6px 22px rgba(0,0,0,0.35);
+}
+
+.video-player video {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.video-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent3);
 }

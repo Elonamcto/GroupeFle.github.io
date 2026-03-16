@@ -174,6 +174,22 @@ if (writing1 && wc1) {
   });
 }
 
+/* ── AUDIO ───────────────────────────────── */
+const audio = document.getElementById("audioPlayer");
+
+function playAudio() {
+  audio.play();
+}
+
+function pauseAudio() {
+  audio.pause();
+}
+
+function restartAudio() {
+  audio.currentTime = 0;
+  audio.play();
+}
+
 /* ── ENREGISTREUR AUDIO ─────────────────────────────── */
 const recStart  = document.getElementById("rec-start");
 const recStop   = document.getElementById("rec-stop");

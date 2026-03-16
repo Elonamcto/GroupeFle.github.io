@@ -72,7 +72,7 @@ const answers = {
   },
   "ant2": {
     correct: "B",
-    feedback: "✅ Le cyberharcèlement est une forme de violence en ligne. Ce n'est pas un jeu : il peut avoir de graves conséquences sur la santé mentale des victimes."
+    feedback: "✅ Le harcèlement est une forme de violence. C’est lorsqu’une personne se comporte régulièrement de manière méchante, humiliante оu menaçante avec une autre․"
   },
 
   /* ── COMPRENDRE LES FAITS – Vidéo ──────────────── */
