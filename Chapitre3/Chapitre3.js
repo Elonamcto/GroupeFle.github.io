@@ -68,11 +68,11 @@ const answers = {
   /* ── ANTICIPATION VIDÉO ─────────────────────────── */
 
   "ant1": {
-    feedback: "💡 Réponse type : Le cyberharcèlement est une forme de harcèlement qui se passe sur Internet ou les réseaux sociaux. C'est lorsqu'une personne envoie de façon répétée des messages méchants, humiliants ou menaçants à une autre."
+    feedback: "💡 Réponse type : Le harcèlement est une forme de violence. C’est lorsqu’une personne se comporte régulièrement de manière méchante, humiliante оu menaçante avec une autre․"
   },
   "ant2": {
     correct: "B",
-    feedback: "✅ Le harcèlement est une forme de violence. C’est lorsqu’une personne se comporte régulièrement de manière méchante, humiliante оu menaçante avec une autre․"
+    feedback: "✅"
   },
 
   /* ── COMPRENDRE LES FAITS – Vidéo ──────────────── */
