@@ -11,7 +11,7 @@ const answers = {
 
   "vf1q1": {
     correct: "faux",
-    feedback: "❌ FAUX — Les influenceurs mentionnés ne pensent pas que les réseaux sociaux sont toujours positifs. Au contraire, ils mettent en garde leurs abonnés contre un usage excessif et encouragent la déconnexion."
+    feedback: "❌ FAUX — Les influenceurs mentionnés ne pensent pas que les réseaux sociaux soient toujours positifs. Au contraire, ils mettent en garde leurs abonnés contre un usage excessif et encouragent la déconnexion."
   },
   "vf1q2": {
     correct: "vrai",
