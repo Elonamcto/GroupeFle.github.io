@@ -62,7 +62,7 @@ const answers = {
     feedback: "💡 Réponse type : Dans ce texte, on parle de paradoxe parce que les influenceurs demandent à leurs abonnés de passer moins de temps sur les réseaux sociaux, alors que leur travail consiste à créer du contenu sur ces plateformes. Ils vivent donc grâce à l'attention que les abonnés leur donnent, tout en encourageant la déconnexion."
   },
   "open11": {
-    feedback: "💡 Réponse libre — l'essentiel est d'argumenter. Tu peux dire que leur message est crédible car ils donnent l'exemple, ou au contraire qu'il manque de sincérité puisqu'ils continuent à poster du contenu. Les deux positions sont acceptées si elles sont justifiées."
+    feedback: "💡 Réponse libre — l'essentiel est d'argumenter. Tu peux dire que leur message est crédible car ils donnent l'exemple, ou au contraire qu'ils manquent de sincérité puisqu'ils continuent à poster du contenu. Les deux positions sont acceptées si elles sont justifiées."
   },
 
   /* ── ANTICIPATION VIDÉO ─────────────────────────── */
